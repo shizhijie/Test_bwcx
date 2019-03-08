@@ -41,7 +41,7 @@ class Singleton3{//线程安全，性能又高的，这种方法最为常见
 	}
 }
 
-class Singleton4{
+class Singleton4{//线程安全，性能又高的，这种方法也最为常见
 	private static Singleton4 instance;
 	private static ReentrantLock lock = new ReentrantLock();
 	private Singleton4() {}
